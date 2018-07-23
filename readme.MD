@@ -53,3 +53,8 @@ To view the local html version of the .rmd files, you can try the following comm
 * `browseURL("github_pages/github_pages.html")`
 
 ----
+
+
+## License
+
+The online version of this course is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
