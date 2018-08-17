@@ -1,0 +1,89 @@
+---
+title: "Chapter 7"
+author: "Andrew Ba Tran"
+date: "8/16/2018"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+
+### Chapter 7
+
+# Git and Github Pages
+
+You've got so many files by now.
+
+Raw data, exploratory scripts, Rmd and HTML files.
+
+Git is useful for version control, especially when working with teams on big projects. And GitHub is useful because it's built on top of Git and lets the public download your files for free.
+
+
+
+```{r img1, echo = F, out.width="100%"}
+library(knitr)
+include_graphics("images/git.png")
+```
+
+
+Git started out as version control system and has since been "repurposed" beyond software development
+
+Journalists use it for methodology, but also to share raw and summarized data.
+
+### For teams to collaborate
+
+**It's kinda complicated**
+
+
+```{r img2, echo = F, out.width="100%"}
+include_graphics("images/smokey.png")
+```
+
+
+So why?
+
+It might be tough to justify for someone working solo.
+
+But it's worth learning because of the capabilities for communicating your analysis and for future collaboration.
+
+## Show off! Collaborate!
+
+- The R Community is active on GitHub
+- The more often you use it, the more often you can use others' code and data
+- Easily import from GitHub repos into your workflow
+- Simple to run [Shiny Apps locally](https://github.com/yonicd/gunflow) with `runGithub` function
+
+
+## Files and folders
+
+The [repo for this class](https://github.com/r-journalism/learn-chapter-7) is on GitHub, but can be easily downloaded to your desktop with the following commands:
+
+```
+install.packages("usethis")
+
+usethis::use_course("https://github.com/r-journalism/learn-chapter-7/archive/master.zip")
+```
+
+## In this section
+
+* Installing git
+    * On a Mac and PC
+* Setting up, using Git
+    * Time to crack open that console
+* Connecting to GitHub
+    * Show your work
+* Best practices for GitHub
+    * Transparency and avoiding issues
+
+
+### Readings 
+
+* Excuse me, do you have a moment to talk about version control? - [Jennifer Bryan](https://peerj.com/preprints/3159/)
+* fivethirtyeight data repo - [Github](https://github.com/fivethirtyeight/data)
+* BuzzFeedNews/everything - [Github](https://github.com/BuzzFeedNews/everything)
+* WPInvestigative - [Github](https://github.com/wpinvestigative)
+
+
+-----
+
+<span style="color:gray">© Copyright 2018, Andrew Ba Tran</span>

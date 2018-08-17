@@ -2,6 +2,8 @@
 title: "Connecting to GitHub"
 author: "Andrew Ba Tran"
 output:
+  pdf_document:
+    toc: yes
   html_document:
     toc: yes
     toc_float: yes
@@ -36,7 +38,14 @@ In Github, [create a new](https://github.com/new) public repository called "chun
 
 Do NOT check "Initialize with README". You want a blank repository.
 
-![](images/chunks.png)
+
+```{r img1, echo = F, out.width="100%"}
+library(knitr)
+include_graphics("images/chunks.png")
+```
+
+
+
 
 This will create a new repository page, which needs to be synchronized with the local repository we're about to create.
 
@@ -44,13 +53,30 @@ Create a folder somewhere (Remember good workflow. Maybe move it to your Documen
 
 Copy and paste the files, including 01_chunk.html and 01_chunk.rmd files into that "chunks" folder.
 
-![](images/chunk_files.png)
+
+```{r img2, echo = F, out.width="100%"}
+include_graphics("images/chunk_files.png")
+```
+
+
+
+
+
 
 Open up your CMD/terminal and navigate to the folder.
 
 For me, that would look like:
 
-![](images/navigate.png)
+
+
+```{r img3, echo = F, out.width="100%"}
+include_graphics("images/navigate.png")
+```
+
+
+
+
+
 
 Type in the git commands we [learned before](http://learn.r-journalism.com/en/git/git/git/) to initialize, add, and commit.
 
@@ -60,13 +86,27 @@ git add .
 git commit -m "first commit"
 ```
 
-![](images/git_execute.png)
+
+
+```{r img4, echo = F, out.width="100%"}
+include_graphics("images/git_execute.png")
+```
+
+
+
 
 Now we need to connect this repository on the local computer to the repository on Github.
 
 The lines were provided when you created the repository on Github:
 
-![](images/push_existing.png)
+
+
+```{r img5, echo = F, out.width="100%"}
+include_graphics("images/push_existing.png")
+```
+
+
+
 
 Type the equivalent of that into your terminal/cmd:
 
@@ -75,11 +115,21 @@ git remote add origin git@github.com:YOURUSERNAME/chunks.git
 git push -u origin master
 ```
 
-![](images/git_pushed.png)
+
+```{r img6, echo = F, out.width="100%"}
+include_graphics("images/git_pushed.png")
+```
+
+
 
 Refresh your Github repo and all your files should be there:
 
-![](images/github_yay.png)
+
+```{r img7, echo = F, out.width="100%"}
+include_graphics("images/github_yay.png")
+```
+
+
 
 Now you can get those HTML files hosted.
 
@@ -97,13 +147,25 @@ First we need to set up Github to host the files.
 
 After uploading your repo, click on **Settings** on the top right.
 
-![](images/settings.png)
+
+```{r img8, echo = F, out.width="100%"}
+include_graphics("images/settings.png")
+```
+
+
 
 Scroll down to the **GitHub Pages** section of Settings.
 
 Change the *Source* from `None` to `master branch` and click save.
 
-![](images/master_branch.png)
+
+
+```{r img9, echo = F, out.width="100%"}
+include_graphics("images/master_branch.png")
+```
+
+
+
 
 
 For future projects, you can organize your files so that all output HTML are stored in a `docs` folder. Then the option `master branch\docs` will host those files and ignore everything in the root folder.
@@ -112,7 +174,13 @@ For future projects, you can organize your files so that all output HTML are sto
 
 Now go to https://YOURUSERNAME.github.io/chunks/06_chunk.html and you should have your hosted file!
 
-![](images/chunk6.png)
+
+```{r img10, echo = F, out.width="100%"}
+include_graphics("images/chunk6.png")
+```
+
+
+
 
 
 That's it!

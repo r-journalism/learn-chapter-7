@@ -2,6 +2,8 @@
 title: "Installing git"
 author: "Andrew Ba Tran"
 output:
+  pdf_document:
+    toc: yes
   html_document:
     toc: yes
     toc_float: yes
@@ -21,7 +23,13 @@ Git should be installed automatically on Macs.
 
 Click on the magnifying glass to search in the top right and search for/open up terminal. 
 
-![](images/macterminal.png)
+
+```{r img1, echo = F, out.width="100%"}
+library(knitr)
+include_graphics("images/macterminal.png")
+```
+
+
 
 And just type in this command 
 
@@ -42,22 +50,48 @@ And if there was a blank or there was if it gave back an error, that means you d
 
 So if you have an older version or you don't have it installed then just go to the website: [git-scm.com](https://git-scm.com/).
 
-![](images/downloadmac.png)
+
+```{r img2, echo = F, out.width="100%"}
+include_graphics("images/downloadmac.png")
+```
+
+
+
 
 Now you might get an error that says can't be open the file because it's from an unidentified developer. 
 
-![](images/developer_mac.png)
+
+```{r img3, echo = F, out.width="100%"}
+include_graphics("images/developer_mac.png")
+```
+
+
+
 
 
 Go ahead and click OK. 
 
 You're going to need administrative privileges for this part. So go back to search. Pop open settings. And click on security and privacy.
 
-![](images/security.png)
+
+```{r img4, echo = F, out.width="100%"}
+include_graphics("images/security.png")
+```
+
+
+
 
 Now under general there will be a message that says this package was blocked from opening because it's not from an unidentified developer.
 
-![](images/open_mac.png)
+
+
+```{r img5, echo = F, out.width="100%"}
+include_graphics("images/open_mac.png")
+```
+
+
+
+
 
 Click on the button open anyway. Click open anyway. And now fill in your username and password.
 
